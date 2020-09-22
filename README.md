@@ -1,5 +1,5 @@
 # Testing Grounds
-#### Chase Weiser's Sandbox
+> Chase Weiser's Sketchpad
 
 ## Table of Contents
 * [General Info](#general-info)
@@ -7,14 +7,14 @@
 * [On the horizion](#upcoming)
 
 ## General Info
-This is a basic digital sketchpad
+Digital Playground 
 
 ## Technologies
 * BASH
-* Python (eventually)
-* SQL (eventually)
 
 ## Upcoming
-* We shall see
+* Python (eventually)
+* SQL (eventually)
+*
 
 
