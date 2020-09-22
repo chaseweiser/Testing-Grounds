@@ -4,11 +4,11 @@
 
 USER=$(whoami)
 
-#Checking for file first
+#Checking for file and creating one if not found
 #Personalize path below:
 FILE=/home/chase/Documents/useful-commands.txt
 if [ ! -f "$FILE" ]; then
-	echo "$FILE does not exist"
+	echo "$FILE does not exist, creating one in your current directory" && touch ./useful-commands.txt 
 fi
 
 
