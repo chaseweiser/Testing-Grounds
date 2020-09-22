@@ -2,17 +2,32 @@
 # Append /Documents/useful-commands.txt with new commands
 
 
+USER=$(whoami)
+
+#Checking for file first
+#Personalize path below:
+FILE=/home/chase/Documents/useful-commands.txt
+if [ ! -f "$FILE" ]; then
+	echo "$FILE does not exist"
+fi
+
+
 # Defining the append function to clean the code up below
-function append_file {
-	echo $newcommand >> /home/chase/Documents/useful-commands.txt
+function APPEND_FILE {
+	echo $NEWCOMMAND >> /home/chase/Documents/useful-commands.txt
 }
 
-user=$(whoami)
+until [[ $RESPONSE = "y" ]]; do
+	read -p "What command would you like to add? " NEWCOMMAND 
+	read -p "$NEWCOMMAND - is that correct? (y/n) " RESPONSE 
+	if [[ $RESPONSE = "y" ]]; then
+		APPEND_FILE
+		echo "Thank you, $USER. $NEWCOMMAND has been added"
+	fi
+done
 
-echo "What command would you like to add, $user?"
-read newcommand
-echo $newcommand '- correct? (y/n)'
-read response
+#No loop version:
+#[ $RESPONSE == 'y' ] && APPEND_FILE && echo "$NEWCOMMAND has been added" || echo "See you later" && exit 0
 
-# Eventually come back in and make this loop back if 'n' is entered
-[ $response == 'y' ] && append_file && echo "$newcommand has been added" || echo "Better luck next time" && exit
+
+
