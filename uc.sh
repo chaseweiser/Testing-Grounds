@@ -26,7 +26,7 @@ until [[ $RESPONSE = "y" ]]; do
 	fi
 done
 
-#No loop version: 
+#No loop version:  
 #[ $RESPONSE == 'y' ] && APPEND_FILE && echo "$NEWCOMMAND has been added" || echo "See you later" && exit 0
 
 
