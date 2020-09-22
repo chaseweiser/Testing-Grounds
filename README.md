@@ -6,15 +6,15 @@
 * [Technologies](#technologies)
 * [On the horizion](#upcoming)
 
-## General Info
-Digital Playground 
+#### General Info
+>Digital Playground 
 
-## Technologies
+#### Technologies
 * BASH
 
-## Upcoming
+#### Upcoming
 * Python (eventually)
 * SQL (eventually)
-*
+
 
 
